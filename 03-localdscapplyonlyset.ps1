@@ -10,7 +10,7 @@
 # 1. Make this loopable so that you pass it a list of machine names via csv or txt file
 
 
-#$arcgisservers=@('ps0016608.esri.com','ps0016607.esri.com','ps0016609.esri.com')
+#$arcgisservers=@('test1.esri.com','test2.esri.com','test3.esri.com')
 $machinesArrayFromFile = Get-Content -Path "C:\deploy\psscripts\machines.txt"
 $parameters = @{
     ComputerName = $machinesArrayFromFile
