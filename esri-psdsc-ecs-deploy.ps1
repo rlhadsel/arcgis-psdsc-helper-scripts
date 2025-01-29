@@ -20,6 +20,10 @@ if (-Not (Test-Path -Path $certsPath)) {
     Write-Host "Directory already exists: $certsPath"
 }
 
+Write-Host "Enter the the password for the ArcGIS Online Account account"
+
+Read-Host -AsSecureString | ConvertFrom-SecureString | Out-File "$directoryPath\rhadsell_esrijj.txt"
+
 winrm quickconfig
 
 Set-ExecutionPolicy RemoteSigned -Force
