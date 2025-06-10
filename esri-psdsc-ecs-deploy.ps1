@@ -100,5 +100,5 @@ Copy-Item -Path "\\archive\crdata\serverdata\Misc\certs\wildcard_esri.pfx" -Dest
 
 Set-Location $directoryPath
 
-Invoke-ArcGISConfiguration -ConfigurationParametersFile .\1091-BED-minHA-v440json.json -Mode InstallLicenseConfigure -DebugSwitch -EnableMSILogging
+# Invoke-ArcGISConfiguration -ConfigurationParametersFile .\1091-BED-minHA-v440json.json -Mode InstallLicenseConfigure -DebugSwitch -EnableMSILogging
 
